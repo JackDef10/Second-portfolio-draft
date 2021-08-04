@@ -8,6 +8,7 @@
 
 html{
     font-size:16px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,12 +17,18 @@ body {
     height:100%;
 }
 
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
 
 section{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    scroll-snap-align: start;
 }
 
 .main-page{
@@ -50,7 +57,10 @@ section{
 
 .section-title{
     color:whitesmoke;
-    font-size:3em;
+    font-size: 6em;
+    font-weight:600;
+    letter-spacing: 0.25em;
+    text-transform:capitalize;
 }
 
 .main-title{
