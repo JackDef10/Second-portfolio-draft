@@ -32,7 +32,8 @@ body {
 
 section{
     height: 100vh;
-    display: flex;
+    display: relative;
+    width:100%;
     justify-content: center;
     align-items: flex-start;
     scroll-snap-align: start;
@@ -44,11 +45,15 @@ section{
     background-position: center;
     background-size: cover;
     width: 100%;
+    display:flex;
+    position:relative;
 
 }
 
 .about-me{
     background-color: rebeccapurple;
+    width:100%;
+    margin: 0 auto;
 }
 
 .projects{
@@ -70,21 +75,14 @@ section{
     font-weight:600;
     border: 3px solid white;
     position: relative;
-    top: 60px;
-    padding: 20px
+    top: 200px;
+    padding: 20px;
+    left: 1000px;
 }
 
-.main-title{
-    color:whitesmoke;
-    font-size: 3.5em;
-    position:relative;
-    margin: 0 auto;
-    display: inline;
-    background-color: rgba(159, 162, 177, .4);
-    
-}
 
-.main-title p {
+
+.main-title a p {
     font-size: 0.35em;
     position: relative;
     text-align: center;
@@ -93,6 +91,8 @@ section{
     width: 250px;
     margin: 20px auto;
     border: 2px solid white;
+    color: white;
+    text-decoration: none;
 }
 
 .main-title h1{
@@ -112,13 +112,14 @@ section{
     margin: 0 auto;
     display: inline;
     padding: 30px;
+    font-size: 3.5em;
+    color:whitesmoke;
 }
 
 #text2{
     color:tomato;
     font-size: 1.45em;
     text-align: center;
-    
     display: block;
     position: relative;
     letter-spacing: 0.5em;
@@ -140,17 +141,24 @@ section{
     font-size:1.5em;
 }  
 
-
-.centerBtn span{
-    color:seashell;
-    border: 3px solid white;
-    margin: 0px;
-    padding: 20px;
-    position: relative;
-
-
-
+.socials{
+    position: absolute;
+    top: 800px;
 }
+
+.socials img{
+    width: 125px;
+    height: auto; 
+    margin: 40px;
+    
+}
+
+#linkedIn{
+    width:50px;
+    height:auto;
+    align-items: baseline;
+}
+
 
 .navbar {
     display: inline;
