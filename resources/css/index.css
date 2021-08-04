@@ -77,7 +77,7 @@ section{
     position: relative;
     top: 200px;
     padding: 20px;
-    left: 1000px;
+    left: 39%;
 }
 
 
@@ -131,7 +131,6 @@ section{
     text-align: center;
     position: relative;
     color:skyblue;
-    
     display:block;
     letter-spacing: 0.5em;
     padding: 10px 0;
@@ -171,7 +170,7 @@ section{
     margin-top: 2em;
     z-index: 1;
     transition: 0.7s;
-    right:32%;
+    
    
 }
 
@@ -215,4 +214,39 @@ section{
     height: 5px;
     z-index: 1;
     border-radius: 8px 8px 0 0;
+}
+/* Tablets */
+@media only screen and (max-width: 800px) and (min-width: 300px){
+    .navbar{
+        width: 325px;
+        font-size: 0.52em;
+        margin: 0 auto;
+        display:flex;
+        padding:10px;
+        top: 20px;
+    }
+    .nav-item{
+        padding: 0px;
+    }
+
+    .title-containter{
+        top: 150px;
+        font-size: 1em;
+        width: 325px;
+    }
+    .socials{
+        top:500px;
+    }
+
+    .main-title a p{
+        font-size: 0.85em;
+    }
+
+    .section-title{
+        font-size:3em;
+        left:9%;
+        top: 100px;
+    }
+    
+    
 }
