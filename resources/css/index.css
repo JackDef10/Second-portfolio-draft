@@ -95,6 +95,13 @@ section{
     text-decoration: none;
 }
 
+.main-title a p:hover {
+    border: 3px solid tomato;
+    color: tomato;
+}
+
+
+
 .main-title h1{
     
     width: 100%;
@@ -156,6 +163,14 @@ section{
     width:50px;
     height:auto;
     align-items: baseline;
+}
+
+#linkedIn:hover{
+    content: url("../images/LinkedIn-Logos/LI-In-Bug-tomato.png");
+}
+
+#github:hover{
+    content: url("../images/GitHub-Logos/GitHub_Logo_tomato.png")
 }
 
 
