@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/css/index.css">
-    <script src="./resources/javascript/Navbar.js"></script>
     <title>Jack Defroand | Web Developer</title>
 </head>
 <body>
@@ -13,11 +12,11 @@
         <div class="container">
             <header class="main-page" id="main-page">
                         <nav class="navbar">
-                            <a href="#main-page" class="nav-item" id="nav-text">HOME</a>
-                            <a href="#about-me" class="nav-item" id="nav-text">ABOUT</a>
-                            <a href="#projects" class="nav-item" id="nav-text">PROJECTS</a>
-                            <a href="#skills" class="nav-item" id="nav-text">SKILLS</a>
-                            <a href="#contact" class="nav-item" id="nav-text">CONTACT</a>
+                            <a href="#main-page" class="nav-item">HOME</a>
+                            <a href="#about-me" class="nav-item">ABOUT</a>
+                            <a href="#projects" class="nav-item">PROJECTS</a>
+                            <a href="#skills" class="nav-item">SKILLS</a>
+                            <a href="#contact" class="nav-item">CONTACT</a>
                         </nav>
                         <div class="title-containter">
                         <div class="main-title">
@@ -27,78 +26,61 @@
                         </div>
                         <div class="socials">
                             <a href="">
-                                <img src="resources/images/GitHub-Logos/GitHub_Logo_White.png" id="github">
+                                <img src="resources/images/GitHub-Logos/GitHub_Logo_White.png" alt="GitHub logo" id="github">
                             </a>
                             <a href="">
-                                <img src="resources/images/LinkedIn-Logos/LI-In-Bug.png" id="linkedIn">
+                                <img src="resources/images/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn logo" id="linkedIn">
                             </a>
                         </div>
             </header>
             <main class="content">
-                <section class="about-me" id="about-me">
-                    <article class="about-style">
-                        <span class="section-title">ABOUT ME</span>
-                        <div id="about">
-                            <h1>ABOUT ME</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Aliquam a faucibus dolor. Aliquam euismod ac elit a eleifend. 
-                                Vivamus in rhoncus ante, ac semper ex. Nam ac lobortis mauris. 
-                                Donec et metus dolor. Sed posuere nec ante nec tincidunt. 
-                                Aliquam euismod ac elit a eleifend.</p>
-                        </div>
-                        <div id="about2">
-                            <h1>LOREM</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Donec libero justo, bibendum in justo id, mollis maximus odio. 
-                            Phasellus purus mauris, tincidunt non turpis eu, fringilla varius justo. 
-                            Nam elementum nunc lacus, eu porttitor metus vehicula eget. 
-                            Pellentesque sed dictum tortor. </p>
-                        </div>
-                        <div id="about3">
-                            <h1>LOREM</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Donec libero justo, bibendum in justo id, mollis maximus odio. 
-                            Phasellus purus mauris, tincidunt non turpis eu, fringilla varius justo. 
-                            Nam elementum nunc lacus, eu porttitor metus vehicula eget. 
-                            Pellentesque sed dictum tortor. </p>
-                        </div>
-                    </article>
-                </section>
-                <section class="projects" id="projects">
-                    <div class="pro-container">
-                        <span class="section-title">PROJECTS</span>
+                <section class="section-style" id="about-me">
+                    <div class="about-me">
+                        <article>
+                            <h1><span class="section-title">ABOUT ME</span></h1>
+                        
+                        </article>
                     </div>
                 </section>
-                <section class="skills" id="skills">
-                    <div class="skills-container">
-                        <span class="section-title">SKILLS</span>
+                <section class="section-style" id="projects">
+                    <div class="projects">
+                        <div class="pro-container">
+                            <h1><span class="section-title">PROJECTS</span></h1>
+                        </div>
                     </div>
                 </section>
-                <section class="contact" id="contact">
-                    <span class="section-title">CONTACT</span>
-                    <div class="email-form">
-                        <div id="input-name">
-                             <label for="name"></label>
-                             <input type="text" id="name" name="name" placeholder="Name" required class="inputBox">
-                        </div>
-                        <div id="input-email">
-                             <label for="email"></label>
-                             <input type="email" id="email" name="email" placeholder="Email" required class="inputBox">
-                        </div>
-                        <div id="input-subject">
-                             <label for="subject"></label>
-                             <input type="text" id="subject" name="subject" placeholder="Subject" required class="inputBox">
-                        </div>
-                        <div id="input-message">
-                             <textarea id="message" rows="10" cols="50" name="message" placeholder="Message" class="inputBox">
-                             </textarea>
-                        </div>
-                        <input id="submit" type="submit" value="Send Message">
+                <section class="section-style" id="skills">
+                    <div class="skills">
+                        <h1><span class="section-title">SKILLS</span></h1>
                     </div>
-                    
+                </section>
+                <section class="section-style" id="contact">
+                    <div class="contact">
+                        <h1><span class="section-title">CONTACT</span></h1>
+                        <div class="email-form">
+                            <div id="input-name">
+                                 <label for="name"></label>
+                                 <input type="text" id="name" name="name" placeholder="Name" required class="inputBox">
+                            </div>
+                            <div id="input-email">
+                                 <label for="email"></label>
+                                 <input type="email" id="email" name="email" placeholder="Email" required class="inputBox">
+                            </div>
+                            <div id="input-subject">
+                                 <label for="subject"></label>
+                                 <input type="text" id="subject" name="subject" placeholder="Subject" required class="inputBox">
+                            </div>
+                            <div id="input-message">
+                                 <textarea id="message" rows="10" cols="50" name="message" placeholder="Message" class="inputBox">
+                                 </textarea>
+                            </div>
+                            <input id="submit" type="submit" value="Send Message">
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
     </div>
+    <script src="./resources/javascript/Navbar.js"></script>
 </body>
 </html>

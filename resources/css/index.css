@@ -30,9 +30,12 @@ body {
     width: 100%;
 }
 
+/* Different page sections*/ 
+
 section{
     height: 100vh;
-    display: relative;
+    display: flex;
+    align-items: center;
     width:100%;
     scroll-snap-align: start;
 }
@@ -57,40 +60,62 @@ section{
     background: linear-gradient(0deg, rgba(63,34,195,1) 10%, rgba(255,99,71,1) 100%);
     margin: 0 auto;
     position:relative;
+    display: block;
+    height: 85%;
+    width:85%;
+    
 }
 
 .projects{
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background: rgb(63,34,195);
+    background: linear-gradient(0deg, rgba(63,34,195,1) 10%, rgba(255,99,71,1) 100%);
+    margin: 0 auto;
     position:relative;
+    display: block;
+    height: 85%;
+    width:90%;
     
 }
 
 .skills{
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
+    background: rgb(63,34,195);
+    background: linear-gradient(0deg, rgba(63,34,195,1) 10%, rgba(255,99,71,1) 100%);
+    margin: 0 auto;
     position:relative;
+    display: block;
+    height: 85%;
+    width:85%;
 }
 
 .contact{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,26,119,1) 45%, rgba(0,212,255,1) 100%);
+    background: rgb(63,34,195);
+    background: linear-gradient(0deg, rgba(63,34,195,1) 10%, rgba(255,99,71,1) 100%);
+    margin: 0 auto;
     position:relative;
+    display: block;
+    height: 85%;
+    width:85%;
 }
 
 .section-title{
     color:whitesmoke;
-    font-size: 6em;
+    font-size: 4.5em;
     font-weight:600;
     border: 3px solid white;
     position: relative;
-    top: 200px;
+    top: 100px;
     padding: 20px;
-    left:1000px;
-    
+    margin: 0 auto;
+    width: 700px;
+    display:block;
+    text-align: center;
 }
 
+.section-style{
+    background-color: seashell;
+    width:100%;
+    position: relative;
+}
 
 
 .main-title a p {
@@ -155,10 +180,6 @@ section{
     letter-spacing: 0.5em;
     padding: 30px 0;
 }
-
-#nav-text{
-    font-size:1.5em;
-}  
 
 .socials{
     position: absolute;
@@ -271,6 +292,7 @@ section{
         top: 150px;
         left:100px;
     }
+
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 900px){
@@ -300,64 +322,9 @@ section{
     }
 }
 
-
-#about {
-    text-align:center;
-    width:650px;
-    height: 800px;
-    position:relative;
-    Padding:60px;
-    font-size:2em;
-    line-height: 1.5em;
-    color: white;
-    background-color:rgba(165, 165, 165, 0.3);
-    box-shadow: 0px 10px 40px rgba(159, 162, 177, .4);
-    border: 2px solid white;
-    border-radius: 2em;
-    left: 200px;
-    top: 300px;
-    letter-spacing: 0.2em;
-
-}
-
-#about2 {
-    text-align:center;
-    width:650px;
-    height: 800px;
-    position:relative;
-    Padding:60px;
-    font-size:2em;
-    color: white;
-    background-color:rgba(165, 165, 165, 0.3);
-    left: 950px;
-    bottom: 500px;
-    box-shadow: 0px 10px 40px rgba(159, 162, 177, .4);
-    border: 2px solid white;
-    border-radius: 2em;
-    line-height: 1.5em;
-    letter-spacing: 0.2em;;
-    
-}
+/* About Me Section */
 
 
-#about3 {
-    text-align:center;
-    width:650px;
-    height: 800px;
-    position:relative;
-    Padding:60px;
-    font-size:2em;
-    color: white;
-    background-color:rgba(165, 165, 165, 0.3);
-    left: 1700px;
-    bottom:1300px;
-    box-shadow: 0px 10px 40px rgba(159, 162, 177, .4);
-    border: 2px solid white;
-    border-radius: 2em;
-    line-height: 1.5em;
-    letter-spacing: 0.2em;;
-    
-}
 
 
 /* contact form */
