@@ -11,8 +11,7 @@
 <body>
     <div id="wrapper">
         <div class="container">
-            <header>
-                <section class="main-page" id="main-page">
+            <header class="main-page" id="main-page">
                         <nav class="navbar">
                             <a href="#main-page" class="nav-item" id="nav-text">HOME</a>
                             <a href="#about-me" class="nav-item" id="nav-text">ABOUT</a>
@@ -22,7 +21,7 @@
                         </nav>
                         <div class="title-containter">
                         <div class="main-title">
-                            <h1>JACK DEFROAND</h1><span id="text2"><span id="web-text">WEB</span> DEVELOPER</span>
+                            <h1>JACK DEFROAND</h1><span id="text2"><span id="web-text">FRONT END</span> DEVELOPER</span>
                             <a href="#contact"><p>CONTACT ME</p></a>
                         </div>
                         </div>
@@ -34,13 +33,34 @@
                                 <img src="resources/images/LinkedIn-Logos/LI-In-Bug.png" id="linkedIn">
                             </a>
                         </div>
-                </section>
             </header>
             <main class="content">
                 <section class="about-me" id="about-me">
-                    <article>
+                    <article class="about-style">
+                        <span class="section-title">ABOUT ME</span>
                         <div id="about">
-                            <span class="section-title">ABOUT ME</span>
+                            <h1>ABOUT ME</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Aliquam a faucibus dolor. Aliquam euismod ac elit a eleifend. 
+                                Vivamus in rhoncus ante, ac semper ex. Nam ac lobortis mauris. 
+                                Donec et metus dolor. Sed posuere nec ante nec tincidunt. 
+                                Aliquam euismod ac elit a eleifend.</p>
+                        </div>
+                        <div id="about2">
+                            <h1>LOREM</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Donec libero justo, bibendum in justo id, mollis maximus odio. 
+                            Phasellus purus mauris, tincidunt non turpis eu, fringilla varius justo. 
+                            Nam elementum nunc lacus, eu porttitor metus vehicula eget. 
+                            Pellentesque sed dictum tortor. </p>
+                        </div>
+                        <div id="about3">
+                            <h1>LOREM</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Donec libero justo, bibendum in justo id, mollis maximus odio. 
+                            Phasellus purus mauris, tincidunt non turpis eu, fringilla varius justo. 
+                            Nam elementum nunc lacus, eu porttitor metus vehicula eget. 
+                            Pellentesque sed dictum tortor. </p>
                         </div>
                     </article>
                 </section>
@@ -55,9 +75,27 @@
                     </div>
                 </section>
                 <section class="contact" id="contact">
-                    <div class="contact-container">
-                        <span class="section-title">CONTACT</span>
+                    <span class="section-title">CONTACT</span>
+                    <div class="email-form">
+                        <div id="input-name">
+                             <label for="name"></label>
+                             <input type="text" id="name" name="name" placeholder="Name" required class="inputBox">
+                        </div>
+                        <div id="input-email">
+                             <label for="email"></label>
+                             <input type="email" id="email" name="email" placeholder="Email" required class="inputBox">
+                        </div>
+                        <div id="input-subject">
+                             <label for="subject"></label>
+                             <input type="text" id="subject" name="subject" placeholder="Subject" required class="inputBox">
+                        </div>
+                        <div id="input-message">
+                             <textarea id="message" rows="10" cols="50" name="message" placeholder="Message" class="inputBox">
+                             </textarea>
+                        </div>
+                        <input id="submit" type="submit" value="Send Message">
                     </div>
+                    
                 </section>
             </main>
         </div>
