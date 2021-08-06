@@ -281,7 +281,8 @@ section{
     position: relative;
     display: inline;
     object-fit: cover;
-    box-shadow: 3px 3px 20px whitesmoke;
+    border: 30px solid white;
+    box-shadow: 3px 3px 20px black;
 }
 
 
