@@ -12,7 +12,17 @@ imageIndexes.forEach((i) => {
 
     image.addEventListener("click", () =>{
         //pop function
+        selectedImage.src = `./resources/images/preview/projects-${i}.jpg`
+        popUp.style.transform = `translateY(0)`
+        selectedImage.alt = `This is my project number ${i}`;
     })
 
     gallery.appendChild(image);
 });
+
+popUp.addEventListener("click", ()=>{
+    popUp.style.transform = "translateY(-100%)"
+    popUp.src = "";
+    popUp.alt = "";
+})
+

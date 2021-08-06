@@ -325,7 +325,7 @@ section{
 
 .container-pro{
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     height: 40%;
     padding: 50px 20px;
     position: relative;
@@ -343,6 +343,7 @@ section{
 
 }
 
+
 #gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -356,6 +357,24 @@ section{
 
 }
 
+#popup{
+    position:fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 200ms transform;
+    padding: 50px;
+}
+
+#selectedImage{
+    max-height:100%;
+}
 
 /* contact form */
 
