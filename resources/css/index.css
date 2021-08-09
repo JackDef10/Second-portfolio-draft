@@ -109,6 +109,10 @@ section{
     display: block;
     min-height:100%;
     width:100%;
+    background-image: url("../svg/bg-svg-backwards.svg");
+    background-repeat: none;
+    background-size:cover;
+    background-position: center;
    
 }
 
@@ -203,7 +207,7 @@ section{
 }
 
 .socials img{
-    width: 125px;
+    width: 120px;
     height: auto; 
     margin: 40px;
     
@@ -286,11 +290,11 @@ section{
     grid-auto-flow: row;
     gap:2em;
     position: relative;
-    top: 300px;
+    top: 250px;
     border-right: 3px solid tomato;
     background-color: whitesmoke;
-    padding: 30px;
-    border-radius: 2em 0em 0em 2em;
+    padding: 40px;
+    border-radius: 4em 0em 0em 10em;
     
 
 }
