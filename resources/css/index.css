@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    letter-spacing: 0.2em;
+    line-height: 1.6em;
     
 
 }
 
 html{
-    font-size:16px;
+    font-size: 62.5%;
 }
 
 body {
@@ -60,19 +61,29 @@ section{
     margin: 0 auto;
     position:relative;
     display: block;
-    height:100%;
+    min-height:100%;
     width:100%;
+    background-image: url("../svg/about-page.svg");
+    background-repeat: none;
+    background-size:cover;
+    background-position: center;
     
     
 }
+
 
 .projects{
     background-color: whitesmoke;
     margin: 0 auto;
     position:relative;
     display: block;
-    height:100%;
+    min-height:100%;
     width:100%;
+    background-image: url("../svg/bg-svg-backwards.svg");
+    background-repeat: none;
+    background-size:cover;
+    background-position: center;
+    
     
     
 }
@@ -82,8 +93,12 @@ section{
     margin: 0 auto;
     position:relative;
     display: block;
-    height:100%;
+    min-height:100%;
     width:100%;
+    background-image: url("../svg/about-page.svg");
+    background-repeat: none;
+    background-size:cover;
+    background-position: center;
     
 }
 
@@ -92,23 +107,25 @@ section{
     margin: 0 auto;
     position:relative;
     display: block;
-    height:100%;
+    min-height:100%;
     width:100%;
    
 }
 
 .section-title{
     color:#ed7966;
-    font-size: 4em;
+    font-size: 6rem;
     font-weight:600;
     border: 3px solid #141850;
     position: relative;
     top: 170px;
     padding: 20px;
     margin: 0 auto;
-    width: 600px;
+    width: 500px;
     display:block;
     text-align: center;
+    box-shadow: 2px 2px 10px grey;
+    letter-spacing: normal;
 }
 
 .section-style{
@@ -119,7 +136,7 @@ section{
 
 
 .main-title a p {
-    font-size: 0.35em;
+    font-size: 2rem;
     position: relative;
     text-align: center;
     padding: 20px;
@@ -141,8 +158,8 @@ section{
 .main-title h1{
     
     width: 100%;
-    font-size: 1.5em;
-    letter-spacing: 0.3em;
+    font-size: 7rem;
+    letter-spacing: 3rem;
     text-align: center;
     padding: 10px 0;
 }
@@ -232,7 +249,7 @@ section{
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600S;
     position: relative;
-    font-size: 1.5em;
+    font-size: 2rem;
 }
 .nav-item:before {
     content: "";
@@ -257,36 +274,43 @@ section{
 /* About Me Section */
 
 #about-text{
-    color: tomato;
-    font-size: 1.3em;
+    color: grey;
+    font-size: 2.1rem;
     line-height: 1.5em;
-    width: 60%;
-    height: 30%;
+    max-width: 60ch;
+    min-height: 30%;
     float: left;
-    margin: 5rem;
+    margin-left: 20em;
+    text-align: center;
     display: grid;
     grid-auto-flow: row;
     gap:2em;
     position: relative;
-    top: 200px;
-    border-right: 2px solid tomato;
+    top: 300px;
+    border-right: 3px solid tomato;
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 2em 0em 0em 2em;
+    
 
 }
 
 #about-text p{
     padding-right: 30px;
-    letter-spacing: 0.2em;
+    
 }
 
 .profile-img img{
-    width: 417px;
-    height: 625px;
+    width: 25%;
+    max-width:30%;
+    min-height: 625px;
     position: relative;
     display: inline;
     object-fit: cover;
     border: 10px solid white;
     box-shadow: 3px 3px 20px black;
-    top: 100px;
+    top: 150px;
+    margin: 100px;
 }
 
 
@@ -295,10 +319,10 @@ section{
 .container-pro{
     margin: 0 auto;
     width: 90%;
-    height: 40%;
+    min-height: 40%;
     padding: 50px 20px;
     position: relative;
-    top: 150px;
+    top: 250px;
 }
 
 .galleryImg {
@@ -350,8 +374,10 @@ section{
 
 .skills-svg{
     position: relative;
-    top: 200px;
+    top: 300px;
+    display: inline;
     float: right;
+    width: 50%;
 }
 
 /* contact form */
@@ -439,18 +465,19 @@ section{
 }
 
 .contact p {
-    color: tomato;
+    color: grey;
     letter-spacing: 0.3em;
     display: inline;
     position: relative;
     top: 160px;
-    margin-left: 7em;
+    margin-left: 5em;
+    font-size: 2.1rem;
 
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 320px){
     #about-text{
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
 
@@ -459,7 +486,7 @@ section{
 @media only screen and (max-width: 800px) and (min-width: 300px){
     .navbar{
         width: 370px;
-        font-size: 0.6em;
+        font-size: 1rem;
         margin: 0 auto;
         display:flex;
         padding:10px;
@@ -475,21 +502,27 @@ section{
     }
 
     .title-containter{
-        top: 150px;
-        font-size: 0.95em;
-        width: 350px;
+        top: 100px;
+        font-size: 14px;
+        width: 300px;
     }
     .socials{
-        top:500px;
+        top:420px;
+       
     }
 
     .main-title a p{
-        font-size: 0.85em;
+        font-size: 1rem;
     }
 
     .section-title{
-        font-size:1em;
+        font-size:3rem;
         width: 200px;
+    }
+
+    .main-title h1{
+        font-size: 3rem;
+        letter-spacing: 0.4em;
     }
 
 }
