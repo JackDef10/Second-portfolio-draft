@@ -331,8 +331,8 @@ section{
 
 .galleryImg {
     max-width: 100%;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     position: relative;
     transition: transform 250ms;
     cursor: pointer;
@@ -350,8 +350,16 @@ section{
 .galleryImg:hover{
     transform: translateY(-2px);
     box-shadow: 3px 3px 10px black;
-    transform: scale(1.2);
+    transform: scale(1.5);
+    transition: 0.4s;
 
+}
+
+.galleryHover{
+    display: inline;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
 }
 
 #popup{
