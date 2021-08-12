@@ -6,11 +6,11 @@ const selectedIndex = null;
 
 imageIndexes.forEach((i) => {
     const image = document.createElement("img");
-    const imageHover = document.createElement("div")
+    const imageContainer = document.createElement("div")
     image.src = `./resources/images/preview/projects-${i}.jpg`;
     image.alt = `This is my project number ${i}`;
-    image.classList.add("galleryImg");
-    imageHover.classList.add("galleryHover");
+    image.classList.add("gallery-img");
+    imageContainer.classList.add("gallery-img-container");
 
     image.addEventListener("click", () =>{
         //pop function
@@ -19,8 +19,8 @@ imageIndexes.forEach((i) => {
         selectedImage.alt = `This is my project number ${i}`;
     })
 
-    gallery.appendChild(imageHover);
-    imageHover.appendChild(image);
+    gallery.appendChild(imageContainer);
+    imageContainer.appendChild(image);
 });
 
 popUp.addEventListener("click", ()=>{

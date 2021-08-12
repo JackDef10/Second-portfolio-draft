@@ -9,6 +9,10 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -27,19 +31,23 @@ body {
 .container{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
-    width: 100%;
+    max-height: 100vh;
+    max-width: 100%;
 }
-
-/* Different page sections*/ 
-
-section{
+ /* Page Structure for every section */
+ 
+.section-style{
+    background-color: seashell;
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
-    width:100%;
+    max-width:100%;
     scroll-snap-align: start;
 }
+
+/* Page styling for every section*/ 
+
 
 .main-page{
     background-image: url("../images/main-background.jpg");
@@ -67,7 +75,6 @@ section{
     background-repeat: none;
     background-size:cover;
     background-position: center;
-    
     
 }
 
@@ -132,27 +139,21 @@ section{
     letter-spacing: normal;
 }
 
-.section-style{
-    background-color: seashell;
-    width:100%;
-    position: relative;
-}
+/* Main page contents */
 
-
-.main-title a p {
+#contact-btn{
     font-size: 2rem;
     position: relative;
     text-align: center;
-    padding: 20px;
+    padding: 1em;
     letter-spacing: 0.2em;
-    width: 250px;
-    margin: 20px auto;
+    max-width: 250px;
+    margin: 1em auto;
     border: 2px solid white;
     color: white;
-    text-decoration: none;
 }
 
-.main-title a p:hover {
+#contact-btn:hover {
     border: 2px solid tomato;
     color: tomato;
     transition: 0.6s;
@@ -161,7 +162,7 @@ section{
 
 .main-title h1{
     
-    width: 100%;
+    max-width: 100%;
     font-size: 7rem;
     letter-spacing: 3rem;
     text-align: center;
@@ -170,17 +171,17 @@ section{
 
 .title-containter{
     background-color: rgba(39, 39, 39, 0.55);
-    width:50%;
+    max-width:50%;
     top:300px;
     position: relative;
     margin: 0 auto;
     display: inline;
-    padding: 30px;
+    padding: 4rem;
     font-size: 3.5em;
     color:whitesmoke;
 }
 
-#text2{
+#sub-heading{
     color:tomato;
     font-size: 1.2em;
     text-align: center;
@@ -191,14 +192,14 @@ section{
 
 }
 
-#web-text{
+#front-end-text{
     text-align: center;
     position: relative;
     font-size:0.8em;
     color:turquoise;
     display:block;
     letter-spacing: 0.5em;
-    padding: 30px 0;
+    padding: 3rem 0;
 }
 
 .socials{
@@ -207,14 +208,14 @@ section{
 }
 
 .socials img{
-    width: 120px;
+    max-width: 120px;
     height: auto; 
     margin: 40px;
     
 }
 
 #linkedIn{
-    width:50px;
+    max-width:50px;
     height:auto;
     align-items: baseline;
 }
@@ -240,7 +241,6 @@ section{
     z-index: 1;
     transition: 0.7s;
     
-   
 }
 
 .nav-item {
@@ -255,6 +255,7 @@ section{
     position: relative;
     font-size: 2rem;
 }
+
 .nav-item:before {
     content: "";
     position: absolute;
@@ -305,8 +306,7 @@ section{
 }
 
 .profile-img img{
-    width: 25%;
-    max-width:30%;
+    max-width:500px;
     min-height: 625px;
     position: relative;
     display: inline;
@@ -320,19 +320,18 @@ section{
 
 /* projects */
 
-.container-pro{
+.project-container{
     margin: 0 auto;
-    width: 90%;
+    max-width: 90%;
     min-height: 40%;
-    padding: 50px 20px;
+    padding: 5rem 2rem; 
     position: relative;
     top: 250px;
 }
 
-.galleryImg {
-    max-width: 100%;
-    height: 400px;
-    width: 400px;
+.gallery-img {
+    width: 100%;
+    height: 100%;
     position: relative;
     transition: transform 250ms;
     cursor: pointer;
@@ -347,7 +346,7 @@ section{
     
 }
 
-.galleryImg:hover{
+.gallery-img:hover{
     transform: translateY(-2px);
     box-shadow: 3px 3px 10px black;
     transform: scale(1.5);
@@ -355,10 +354,10 @@ section{
 
 }
 
-.galleryHover{
+.gallery-img-container{
     display: inline;
-    width: 400px;
-    height: 400px;
+    max-width: 400px;
+    max-height: 400px;
     overflow: hidden;
 }
 
@@ -382,14 +381,14 @@ section{
 }
 
 
-/* projects */
+/* Skills section */
 
 .skills-svg{
     position: relative;
     top: 300px;
     display: inline;
     float: right;
-    width: 50%;
+    max-width: 50%;
 }
 
 /* contact form */
@@ -467,8 +466,8 @@ section{
 .contact-svg img{
     display: inline;
     position: relative;
-    width: 40%;
-    height: 20%;
+    max-width: 40%;
+    max-height: 20%;
     object-fit: cover;
     float: right;
     bottom: 250px;
@@ -485,12 +484,6 @@ section{
     margin-left: 5em;
     font-size: 2.1rem;
 
-}
-
-@media only screen and (max-width: 1200px) and (min-width: 320px){
-    #about-text{
-        font-size: 1.2rem;
-    }
 }
 
 
